@@ -1,0 +1,38 @@
+body {
+    background-color: grey;
+}
+
+.content {
+    /* background-color: grey; */
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content h4 {
+    text-align:center;
+}
+
+.topmenu {
+    background-color: black;
+    overflow: hidden;
+}
+
+.topmenu a {
+    background-color: green;
+    color: #2f2f2f;
+    text-align: center;
+    font-size: 17PX;
+    padding: 14px 16px;
+    float: left;
+}
+
+.topmenu a.active {
+    color: white;
+}
+
+.topmenu a:hover {
+    background-color: bisque;
+    color: black
+}
