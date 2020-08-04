@@ -1,5 +1,6 @@
 body {
     background-image: url("media/1324652.jpg");
+    background-size: cover;
 }
 
 .content {
@@ -19,7 +20,7 @@ body {
 }
 
 .content h4 {
-    text-align:center;
+    text-align: center;
 }
 
 .content img {
@@ -28,13 +29,17 @@ body {
     margin-right: auto;
 }
 
+.content a {
+    text-align: center;
+}
+
 .topmenu {
-    background-color: black;
+    background-color: rgb(26, 26, 56);
     overflow: hidden;
 }
 
 .topmenu a {
-    background-color: green;
+    background-color: lightskyblue;
     color: #2f2f2f;
     text-align: center;
     font-size: 17PX;
