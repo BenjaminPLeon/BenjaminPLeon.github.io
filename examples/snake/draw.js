@@ -12,15 +12,23 @@ var snake;
     block = new Block();
 
     block.makeLoc();
-    console.log(block)
+    
 
-    window.setInterval(() => {
+    let w = window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        block.draw();
         snake.update();
         snake.draw();
+
+        if (snake.eat(block)) {
+            block.makeLoc();
+        }
+
+        snake.checkCollision(w)
     }, 250);
 }());
 
 window.addEventListener('keydown', ((evt) => {
     snake.changeDirection(evt.key);
 }))
+
