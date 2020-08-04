@@ -1,9 +1,17 @@
 body {
-    background-color: grey;
+    background-image: url("media/1324652.jpg");
 }
 
 .content {
-    /* background-color: grey; */
+    background-color: #a1b3a7;
+    margin: auto;
+    margin-top: 5px;
+    /* height: 800px; */
+    height: auto;
+    width: 70%;
+    border: 3px;
+    padding: 10px;  
+
 }
 
 .content h1 {
@@ -12,6 +20,12 @@ body {
 
 .content h4 {
     text-align:center;
+}
+
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .topmenu {
