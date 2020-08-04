@@ -55,3 +55,9 @@ body {
     background-color: bisque;
     color: black
 }
+
+.examples {
+    background-color: #a1b3a7;
+    height: auto;
+    float: left;
+}
