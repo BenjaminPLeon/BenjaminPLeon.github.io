@@ -20,6 +20,7 @@ body {
 }
 
 .content h4 {
+    display: none;
     padding-top: 0%;
     text-align: center;
 }
@@ -32,6 +33,10 @@ body {
 
 .content a {
     text-align: center;
+}
+
+.content p {
+    display: none;
 }
 
 .topmenu {
@@ -59,11 +64,13 @@ body {
 
 .content .examples {
     /* background-color: #a1b3a7; */
+    display: none;
     height: auto;
     float: left;
     margin-left: 45px;
 }
 
 .content .ex-pics {
+    display: none;
     float: left;
 }
