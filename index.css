@@ -16,9 +16,11 @@ body {
 
 .content h1 {
     text-align: center;
+    padding-bottom: 0%;
 }
 
 .content h4 {
+    padding-top: 0%;
     text-align: center;
 }
 
