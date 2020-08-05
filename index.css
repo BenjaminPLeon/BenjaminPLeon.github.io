@@ -4,19 +4,20 @@ body {
 }
 
 .content {
-    /* height: 1000px; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightblue;
     margin: auto;
     margin-top: 5px;
+    height: 800px;
     width: 60%;
-    /* border: 3px; */
-    padding: 10px;  
+    padding: 10px; 
+    display: none;
 }
 
 .content h1 {
     text-align: center;
     padding-bottom: 0%;
+    background-color: lightblue;
 }
 
 .content h4 {
@@ -33,10 +34,7 @@ body {
 
 .content a {
     text-align: center;
-}
-
-.content p {
-    display: none;
+    color: #2f2f2f;
 }
 
 .topmenu {
@@ -45,7 +43,7 @@ body {
 }
 
 .topmenu a {
-    background-color: lightskyblue;
+    background-color: lightblue;
     color: #2f2f2f;
     text-align: center;
     font-size: 17PX;
