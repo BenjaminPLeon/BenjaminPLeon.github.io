@@ -5,7 +5,7 @@ body {
 
 .content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #a1b3a7;
+    background-color: lightblue;
     margin: auto;
     margin-top: 5px;
     /* height: 800px; */
@@ -57,9 +57,10 @@ body {
 }
 
 .content .examples {
-    background-color: #a1b3a7;
+    /* background-color: #a1b3a7; */
     height: auto;
     float: left;
+    margin-left: 45px;
 }
 
 .content .ex-pics {
