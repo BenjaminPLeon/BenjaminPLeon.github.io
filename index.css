@@ -4,7 +4,7 @@ body {
 }
 
 .content {
-    position: relative;
+    /* height: 1000px; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightblue;
     margin: auto;
@@ -20,7 +20,7 @@ body {
 }
 
 .content h4 {
-    display: none;
+    /* display: none; */
     padding-top: 0%;
     text-align: center;
 }
