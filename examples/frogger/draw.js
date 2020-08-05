@@ -20,6 +20,5 @@ window.addEventListener('keydown', ((evt) => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         frog.move(evt.key);
         frog.draw();    
-    }
-    
+    }    
 }))
