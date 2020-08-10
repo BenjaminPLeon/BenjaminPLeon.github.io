@@ -17,7 +17,7 @@ var snake;
     // a function used to randomly place a block onto the board, implementation in block
     block.makeLoc();
     
-    // create a windows that updates every 250 milliseconds.  This is the window that will run the game  
+    // create a windows that updates every 150 milliseconds.  This is the window that will run the game  
     let w = window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         block.draw();
@@ -26,9 +26,11 @@ var snake;
         if(snake.checkCollision()) {
             window.clearInterval(w);
         } else {
+            // if there is no collision detected, update the snakes blocks and re-draw them all
             snake.update();       
             snake.draw();
 
+            // if the snake has eaten a block, randomly generate a new location for the block
             if (snake.eat(block)) {
                 block.makeLoc();
             } 
@@ -36,6 +38,7 @@ var snake;
     }, 150);
 }());
 
+// adding the event listener for when a user presses a direction key
 window.addEventListener('keydown', ((evt) => {
     snake.changeDirection(evt.key);
 }))
