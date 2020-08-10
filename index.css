@@ -10,18 +10,18 @@ body {
     margin-top: 5px;
     height: 800px;
     width: 60%;
-    padding: 10px; 
-    display: none;
+    padding: 10px;
 }
 
 .content h1 {
+    display: none;
     text-align: center;
     padding-bottom: 0%;
     background-color: lightblue;
 }
 
 .content h4 {
-    /* display: none; */
+    display: none;
     padding-top: 0%;
     text-align: center;
 }
