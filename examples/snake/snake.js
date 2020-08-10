@@ -70,17 +70,18 @@ function Snake() {
         return false;
     }
 
-    this.checkCollision = function(w) {
+    this.checkCollision = function() {
         for (var i=0; i<this.tail.length; i++) {
             if(this.x === this.tail[i].x && this.y === this.tail[i].y) {
                 // console.log("Collision");
                 this.length = 0;
                 this.tail = [];
-                window.clearInterval(w);
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 ctx.font = "30px Arial";
                 ctx.fillText("Game Over", 10, 50);
+                return true;
             }
+            return false;
         }
     }
 }

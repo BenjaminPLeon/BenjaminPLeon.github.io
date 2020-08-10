@@ -3,6 +3,8 @@ body {
     background-size: cover;
 }
 
+/* Below is the CSS for the content div*/
+
 .content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightblue;
@@ -37,10 +39,7 @@ body {
     color: #2f2f2f;
 }
 
-
-
 .content .examples {
-    /* background-color: #a1b3a7; */
     display: none;
     height: auto;
     float: left;
@@ -52,6 +51,8 @@ body {
     display: none;
     float: left;
 }
+
+/* Below is the top navigational menu's CSS */
 
 .topmenu {
     background-color: rgb(26, 26, 56);

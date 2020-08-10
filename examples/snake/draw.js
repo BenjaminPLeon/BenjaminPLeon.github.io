@@ -17,14 +17,16 @@ var snake;
     let w = window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         block.draw();
-        snake.update();
-        snake.draw();
+        if(snake.checkCollision()) {
+            window.clearInterval(w);
+        } else {
+           snake.update();       
+            snake.draw();
 
-        if (snake.eat(block)) {
-            block.makeLoc();
+            if (snake.eat(block)) {
+                block.makeLoc();
+            } 
         }
-
-        snake.checkCollision(w)
     }, 250);
 }());
 
