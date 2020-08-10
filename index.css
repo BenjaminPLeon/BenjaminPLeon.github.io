@@ -37,6 +37,22 @@ body {
     color: #2f2f2f;
 }
 
+
+
+.content .examples {
+    /* background-color: #a1b3a7; */
+    display: none;
+    height: auto;
+    float: left;
+    margin-left: 45px;
+    margin-right: 100px;
+}
+
+.content .ex-pics {
+    display: none;
+    float: left;
+}
+
 .topmenu {
     background-color: rgb(26, 26, 56);
     overflow: hidden;
@@ -58,17 +74,4 @@ body {
 .topmenu a:hover {
     background-color: bisque;
     color: black
-}
-
-.content .examples {
-    /* background-color: #a1b3a7; */
-    display: none;
-    height: auto;
-    float: left;
-    margin-left: 45px;
-}
-
-.content .ex-pics {
-    display: none;
-    float: left;
 }
