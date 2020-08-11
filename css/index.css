@@ -57,6 +57,7 @@ body {
 .topmenu {
     background-color: rgb(26, 26, 56);
     overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .topmenu a {
