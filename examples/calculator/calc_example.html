@@ -2,12 +2,44 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175381841-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-175381841-1');
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ben's calculator example</title>
         <script type="text/javascript" src="calculator.js"></script>
     </head>
 
     <body>
-
+        <div class="calculator-body">
+            <div class="screen">
+                <div class="previous-operand"></div>
+                <div class="current-operand"></div>
+            </div>
+            <button class="double-wide">AC</button>
+            <button>DEL</button>
+            <button>%</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button class="double-wide">=</button>
+        </div>
     </body>
-</html>
+</html> 
