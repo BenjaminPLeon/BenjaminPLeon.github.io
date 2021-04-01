@@ -79,7 +79,7 @@ function Snake() {
     // checks for game ending collisions in the body of the snake, and displays game over text if there is a colision
     this.checkCollision = function() {
         for (var i=0; i<this.tail.length; i++) {
-            if(this.x === this.tail[i].x && this.y === this.tail[i].y || this.tail[i].x < 0 || this.tail[i].y < 0 || this.tail[i].x > canvas.width || this.tail[i].y > canvas.height) {
+            if(this.x === this.tail[i].x && this.y === this.tail[i].y) {
                 // console.log("Collision");
                 this.length = 0;
                 this.tail = [];
