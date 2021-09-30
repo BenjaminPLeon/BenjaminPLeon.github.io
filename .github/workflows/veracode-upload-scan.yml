@@ -1,0 +1,42 @@
+name: Veracode
+on:
+  workflow_run:
+    workflows: ["First"]
+    types: 
+      - completed
+env:
+  veracode_app: "Servicing UI"
+jobs:
+#veracode
+  veracode_sast_upload_v210929:
+    name: Veracode Scan
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    env:
+      DEPLOYMENT_STAGE: stg
+      REPOSITORY_NAME: cel-srv-ui
+    steps:    
+      - name: test
+        run: echo "we good"
+      # - name: Checkout
+      #   uses: actions/checkout@main
+      # - name: Prepare Artifacts
+      #   shell: bash
+      #   run: zip -r ${{ env.REPOSITORY_NAME }}_${{ env.DEPLOYMENT_STAGE }}_${{ github.run_id }}.zip src '*.asp' '*.css' '*.ehtml' '*.es' '*.es6' '*.handlebars' '*.hbs' '*.hjs' '*.htm' '*.html' '*.js' '*.jsx' '*.json' '*.jsp' '*.map' '*.mustache' '*.php' '*.ts' '*.tsx' '*.vue' '*.xhtml'
+      # - name: Gather time stamp
+      #   run:  echo "CURRENT_TIME=$(date +"%y%m%d%H%M%S")" >> $GITHUB_ENV
+      # - name: Branch Name Var
+      #   run: echo "BRANCH_NAME=${GITHUB_HEAD_REF}"  >> $GITHUB_ENV
+      # - uses: veracode/veracode-uploadandscan-action@master # Run the uploadandscan action. Inputs are described above.
+      #   with:
+      #     version: 'RunID:${{ github.run_id }} DateStamp:${{ env.CURRENT_TIME }}'
+      #     filepath: '${{ env.REPOSITORY_NAME }}_${{ env.DEPLOYMENT_STAGE }}_${{ github.run_id }}.zip'
+      #     vid: '${{ secrets.VERACODE_API_ID }}'
+      #     vkey: '${{ secrets.VERACODE_API_KEY }}'
+      #     createsandbox: 'true'
+      #     sandboxname: '${{ env.BRANCH_NAME }}'
+      #     exclude: ''
+      #     include: '*'
+      #     criticality: 'High'
+      #     appname: '${{ env.veracode_app }}'
+      #     deleteIncompleteScan: 'true'
